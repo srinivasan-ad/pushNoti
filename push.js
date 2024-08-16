@@ -6,8 +6,8 @@ let vapidKeys = {
       
 }
 const payload = JSON.stringify({
-    title: "Hello Aditya",
-    body: "Where are you?",
+    title: "Namaste universe !",
+    body: "I am in :)",
   });
 push.setVapidDetails('mailto:1mp22cs039.bgscet.ac.in',vapidKeys.publicKey,vapidKeys.privateKey);
 let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/dRbUtFHUvMs:APA91bEKLU_pMb8hWXyTKxdFp8OVdkM5YHdapnuUha_9fl3s26wLM-nAXjc7beoew9ozpc3_cZUGeEuLBs6nUMZYiviqgJRIt5yd5sZQlrpTO6NhsY2RsqjljqV7WGSvtyWb4wyT4WUx","expirationTime":null,"keys":{"p256dh":"BL7W4c43O1hA15_Xs372g21SBXFi1XM2iFfXxw7d4fMVO9keSFGUmojN0zDlRc1MV9h1PU9hPwwQFw3df3T3b3k","auth":"Y5iwpbCkWrjpsW-_ZFCpHg"}}
