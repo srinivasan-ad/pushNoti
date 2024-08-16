@@ -7,8 +7,8 @@ let vapidKeys = {
 }
 const payload = JSON.stringify({
     title: "Hello Aditya",
-    des: "Where are you?",
+    body: "Where are you?",
   });
 push.setVapidDetails('mailto:1mp22cs039.bgscet.ac.in',vapidKeys.publicKey,vapidKeys.privateKey);
-let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/dL280fNwl2s:APA91bF1-da_ck4sZPOE79EChxR1HIIk0G92TLQlFEUbbPlhG-K4PNhJXZiv5-XwSn7zsn5ygMG0w6q9Lj7iXDHu0PuOqUMpMJnwIepi3WcMBcAarbWZbmBnSRdDKJNxnbh5C_a8Yrtz","expirationTime":null,"keys":{"p256dh":"BNzUxQ497p2Z0FN_Mham8DUsv8DgOHGbiqC7hYxPRCpIdbKKMM-28_d7i4eIoz7x75R_EIJ8U4E-1IbLTQTsMYM","auth":"aAmylu6BrSFSlN_0aS6zDA"}};
+let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/dRbUtFHUvMs:APA91bEKLU_pMb8hWXyTKxdFp8OVdkM5YHdapnuUha_9fl3s26wLM-nAXjc7beoew9ozpc3_cZUGeEuLBs6nUMZYiviqgJRIt5yd5sZQlrpTO6NhsY2RsqjljqV7WGSvtyWb4wyT4WUx","expirationTime":null,"keys":{"p256dh":"BL7W4c43O1hA15_Xs372g21SBXFi1XM2iFfXxw7d4fMVO9keSFGUmojN0zDlRc1MV9h1PU9hPwwQFw3df3T3b3k","auth":"Y5iwpbCkWrjpsW-_ZFCpHg"}}
 push.sendNotification(sub,payload);
