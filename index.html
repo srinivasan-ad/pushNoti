@@ -19,7 +19,7 @@
                 userVisibleOnly : true , 
                 applicationServerKey : 'BGaj-2wVNung__pDef8rChvu04JzUxVLPTNUNLDOc9JqLy_5en-s3U8SlydUIK1O18uUVJzFt14N2JBNWJVZ7QI'
             })
-            document.getElementById('subscription-message').innerText = `Subscription code -> ${push}`;
+            document.getElementById('subscription-message').innerText = `Subscription code -> ${JSON.stringify(push)}`;
             console.log(JSON.stringify(push));
         }
     </script>
