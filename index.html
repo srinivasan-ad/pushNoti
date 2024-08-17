@@ -24,6 +24,13 @@
           "subscription-message"
         ).innerText = `Subscription code -> ${JSON.stringify(push)}`;
         console.log(JSON.stringify(push));
+        fetch('https://main--wpushnoti.netlify.app/',{
+          method : 'POST',
+          headers :  {
+            'Content-Type': 'application/json'
+          },
+          body : JSON.stringify(push)
+        });
       }
     </script>
   </body>
